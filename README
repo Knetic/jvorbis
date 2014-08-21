@@ -1,0 +1,17 @@
+JVorbis
+==
+
+This library enables use of the Tremor branch of Ogg Vorbis in Java applications.
+
+Ogg Vorbis (if you didn't already know) is an audio compression format which is license-free and open-source.
+This library ties itself specifically to the Tremor branch of Ogg Vorbis, which is a faster (fixed-point)
+implementation of the specification. This makes this library well-suited for embedded applications.
+
+More about Ogg Vorbis:
+http://xiph.org/vorbis/
+
+Ogg Vorbis spec:
+https://xiph.org/vorbis/doc/
+
+Tremor Branch:
+https://wiki.xiph.org/Tremor

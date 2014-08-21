@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Note that this script requires JAVA_HOME to be set.
+
 LD_LIBRARY_PATH=.
 export LD_LIBRARY_PATH
 
@@ -13,12 +15,12 @@ echo "===="
 echo ""
 echo ""
 
-rm libjvorb.so
-rm *.java~
-rm *.c~
-rm *.h~
-rm *.sh~
-rm *.log
+rm -f libjvorb.so
+rm -f *.java~
+rm -f *.c~
+rm -f *.h~
+rm -f *.sh~
+rm -f *.log
 
 echo "===="
 echo "Java stage"
@@ -36,7 +38,7 @@ echo "===="
 echo ""
 echo ""
 
-gcc -shared *.c -o libjvorb.so -I /usr/lib/jvm/java-6-openjdk/include/ -w
+gcc -shared *.c -o libjvorb.so -I$JAVA_HOME/include -I$JAVA_HOME/include/linux -w -fPIC
 
 echo ""
 echo ""
