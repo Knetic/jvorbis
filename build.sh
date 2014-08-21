@@ -37,7 +37,9 @@ echo "===="
 echo ""
 echo ""
 
-gcc -shared *.c -o libjvorb.so -I$JAVA_HOME/include -I$JAVA_HOME/include/linux -w -fPIC
+pushd vorbis >> /dev/null
+gcc -shared *.c -o ../libjvorb.so -I$JAVA_HOME/include -I$JAVA_HOME/include/linux -w -fPIC
+popd >> /dev/null
 
 echo ""
 echo ""
