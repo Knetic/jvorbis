@@ -29,7 +29,6 @@ echo ""
 echo ""
 
 javac ./JVorbisFile.java
-javac ./VorbTest.java
 javah -jni JVorbisFile 
 
 echo "===="
@@ -44,5 +43,3 @@ echo ""
 echo ""
 echo "done."
 echo ""
-
-java VorbTest -Djava.library.path=.
